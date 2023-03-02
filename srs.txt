@@ -1,0 +1,42 @@
+SOFTWARE REQUIREMENT SPECIFICATION
+ SRS for Library mangement system
+1.Introduction
+ The Integrated Library Management system
+provides you the ease of issuing,renewing, or reserving a book from an library within your town through your phone. The Integrated LibraryManagement system is developed on the android platform which basically focuses on issuing, renewing andreserving a book.
+1.1 Scope
+Manually updating the library system into an android based application so that the user can know thedetails of the books available and maximum limit on borrowing from their computer and also through theirphones.
+The ILM System provides information's like details of the books, insertion of new books, deletion of lostbooks, limitation on issuing books, fine on keeping a book more than one month from the issued date.
+1.3 Purpose
+The purpose of the project is to maintain the details of books and library members of different libraries.The main purpose of this project is to maintain a easy circulation system between clients and the libraries, toissue books using single library card, also to search and reserve any book from different available libraries andto maintain details about the user (fine, address, phone number).Moreover, the user can check all these featuresfrom their home
+ 
+2.Definition
+ JAVA- platform independent
+ IDE- Integrated development environment
+
+3.Overall description
+ 3.1 Software requirement 
+  Advance Java 
+  Adroid developer tool 
+ 3.2 Hardware requirement 
+  2 GB ram
+  intel i5 
+3.3 Product prespective
+ The proposed Library Management System will take care of the current book detail at any point oftime. The book issue, book return will update the current book details automatically so that user willget the update current book details.
+
+4.Requirement 
+ 4.1 Functional requirement 
+ The LMS should store all information about librarians and patrons, their access keys, priority and etc.•The LMS allow searching items by author, title or keywords•The LMS should support 500 patrons and 1000 requests/min simultaneously.•The LMS should allow librarians to add, delete and modify items in database, and check availability of the items
+ 4.2 Non functional requirement
+  Performance requirement
+  The system shall accommodate high number of books and users without any fault.•Responses to view information shall take no longer than 5 seconds to appear on the screen
+  Safety requirement
+  system use shall not cause any harm to the user.
+  Error handling 
+  LMS product shall handle expected and non-expected errors in ways that prevent loss in information and long downtime  period
+
+5.Appendix 
+ User: a general login id assigned to most user
+ Client :independent user for the Software 
+ User interface layer: The section of the assignment referring to what  the user interacts wit directly
+ 
+   
