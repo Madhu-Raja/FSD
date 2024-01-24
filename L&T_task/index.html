@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>Login and registration</title>
+        <link rel="stylesheet" href="style.css">
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" > </script>
+        <script type="text/javascript">
+          (function() {
+          emailjs.init("8Aju3iuiAIjpFWvny");
+          })(); </script>
+    </head>
+    <body>
+        <div class="hero">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button " class="toggle-btn" onclick="login()">Log in</button>
+                    <button type="button " class="toggle-btn" onclick="register()">Register</button>
+                </div>
+                <form  id="login" class="input">
+                    
+                    <label class="custom-label1">Username</label><br>
+                    <input type="text"id=" user_id" class="input-feild" placeholder="User id" required>
+                    
+                    <label class="custom-label1">Password</label><br>
+                    <input type="password" class="input-feild" placeholder=" password" required>
+                    
+                    <input type="checkbox" class="check-box"  required><span>Remember password</span>
+                    <button type="submit" class="submit-btn" ><a href="anotherpage.html">Log in</a></button>
+
+                </form>
+                <form  id="register" class="input" >
+                    <label class="custom-label1">Username</label><br>
+                    <input type="text" id ="userid" class="input-feild" placeholder="User id" required>
+                    <label class="custom-label2">Email id</label><br>
+                    <input type="email" id ="email" class="input-feild" placeholder=" Email id" required>
+                    <label class="custom-label1">Password</label><br>
+                    <input type="password" id ="password" class="input-feild" placeholder=" password" required>
+                    <input type="checkbox" class="check-box" required ><span>I Agree To The T&C Appied</span>
+                    <button type="submit" class="submit-btn" onclick="sendemail()" >Register</button>
+
+                </form>
+
+            </div>
+            
+        </div>
+        <script>
+                var x= document.getElementById("login");
+                var y= document.getElementById("register");
+                var z= document.getElementById("btn");
+
+                function register(){
+                    x.style.left="-400px";
+                    y.style.left="50px";
+                    z.style.left="110px";
+                }
+                function login(){
+                    x.style.left="50px";
+                    y.style.left="450px";
+                    z.style.left="0px";
+                }
+        </script>
+    <script>
+        function sendemail(){
+
+var email=document.getElementById("email").value;
+var to_name=document.getElementById("userid").value;
+var password=document.getElementById("password").value;
+
+var templateParams = {
+    email: email,
+    to_name:userid,
+    
+  };
+
+  emailjs.send('service_7xihk7e', 'template_rusxise', templateParams)
+.then(function(response) {
+ console.log('SUCCESS!', response.status, response.text);
+ window.alert("Sent successfully!");
+ 
+})
+
+ 
+}
+            
+ 
+    </script>
+    
+        
+
+    </body>
+</html>
