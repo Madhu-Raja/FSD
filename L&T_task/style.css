@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+     font-family: 'Poppins' ,sans-serif;
+}
+body{
+    height: 100%;
+    width: 100%;
+    
+    background-image: url(backgroundimage);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form-box{
+    width: 25rem;
+    height: 28rem;
+    display: flex;
+    flex-direction:column;
+    background: rgba(255,255,255,0.06);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,.37);
+    border-radius: 20px;
+    border-style: groove;
+    padding: 5px;
+    position: relative;
+    margin: 6% auto;
+    overflow: hidden;
+    
+}
+.custom-label1{
+ color: beige;
+}
+.custom-label2{
+    color: beige;
+   }
+
+.hero{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+}
+.button-box{
+    width:220px;
+    margin: 35px auto;
+    position:relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+.toggle-btn{
+    background:transparent;
+    padding: 10px 30px;
+    border:0;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+#btn{
+    top:0 ;
+    left:0 ;
+    position: absolute ;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right,#3f5efb,#fc466b);
+    border-radius: 30px;
+    transition: .5s;
+
+}
+
+.input{
+    top: 150px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+.input-feild{
+    width: 100%;
+    padding: 10 px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline:none;
+    background: transparent;
+    color: aliceblue;
+}
+.submit-btn{
+    width:85%;
+    padding:10px 30px ;
+    cursor:pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right,#3f5efb,#fc466b);
+    border: 0;
+    border-radius: 30px;
+    outline:none;
+    text-align: center;
+}
+.check-box{
+    margin: 30px 10px 30px 0;
+}
+span{
+    color: #777;
+    bottom:68px;
+    position: absolute;
+    font-size: 12px;
+}
+#login{
+    left: 50px;
+
+}
+#register{
+    left: 450px;
+}
